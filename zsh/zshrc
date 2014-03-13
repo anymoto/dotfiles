@@ -1,0 +1,3 @@
+source ~/.zsh/aliases.zsh
+source ~/.zsh/exports.zsh
+source ~/.zsh/framework.zsh
