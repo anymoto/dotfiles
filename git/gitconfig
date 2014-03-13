@@ -1,0 +1,55 @@
+[user]
+    name = anymoto
+    email = ana@castromartinez.com
+
+[github]
+    user = anymoto
+
+[color]
+    ui = auto
+    interactive = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green
+    changed = magenta
+    untracked = bold yellow
+
+[core]
+    editor = vim
+    autocrlf = input
+    safecrlf = warn
+    quotepath = false
+
+[diff]
+    tool = opendiff
+
+[merge]
+    # Include summaries of merged commits in newly created merge commit
+    # messages
+    log = true
+    tool = opendiff
+
+[alias]
+    hist = "log --graph --pretty=format:'%Cred%h%Creset %d %s %Cgreen(%cr)%Creset %Cblue[%an]%Creset' --abbrev-commit --date=relative"
+    ahead = "log @{u}...HEAD --graph --decorate --left-right --boundary --pretty=format:'%Cred%h%Creset %d %s %Cgreen(%cr)%Creset %Cblue[%an]%Creset' --abbrev-commit --date=relative"
+    today = "log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative"
+    # Show verbose output about tags, branches, or remotes
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
+[push]
+    # simple is the new default, requires > 1.7
+    # default = simple
+    default = matching
