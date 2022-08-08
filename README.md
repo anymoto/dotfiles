@@ -2,7 +2,7 @@ My own dotfiles
 
 # Installation
 
-git clone git://github.com/anymoto/dotfiles.git ~/.dotfiles
+git clone git@github.com:anymoto/dotfiles.git ~/.dotfiles
 
 # Setup
 ## zsh
